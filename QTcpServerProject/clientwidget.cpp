@@ -53,7 +53,4 @@ void ClientWidget::on_pushButtonDisconnect_clicked()
     }
     tcpSocket->disconnectFromHost();
     ui->textEditRead->append("Disconnect success.");
-
-    tcpSocket->close();
-    tcpSocket = nullptr;
 }
